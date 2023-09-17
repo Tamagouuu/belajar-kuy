@@ -1,0 +1,831 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  background-color: #111;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 6;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(163, 163, 163);
+}
+
+/* End of Navbar */
+
+/* Hero (Content 1) */
+
+.container-1 {
+  height: 480px;
+  display: flex;
+}
+
+.container-1 .content-1 {
+  width: 25%;
+  background-image: url(img/landing-page/jokowi.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.container-1 .content-1 .image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/landing-page/jokowi-1.png);
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+}
+
+.content-1:hover > .image-overlay {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1.03);
+  transition: 0, 5s;
+}
+
+.content-1:hover > .text-content {
+  position: absolute;
+  z-index: 3;
+  bottom: 50px;
+  transition: 0, 5s;
+}
+
+.content-1 .text-content {
+  text-align: center;
+  color: white;
+  transition: 0, 7s;
+  text-shadow: 2px 2px 2px rgba(32, 32, 32, 0.28);
+}
+
+.content-1:hover > .button .button-content {
+  opacity: 100%;
+  transition: 0.5s;
+  z-index: 3;
+  position: relative;
+  bottom: 10px;
+}
+
+.button .button-content {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 9px 25px;
+  width: 80px;
+  text-decoration: none;
+  opacity: 0%;
+}
+
+.content-1 .text-content h2 {
+  font-size: 30px;
+}
+
+.content-1 .text-content p {
+  margin: 6px 5px;
+}
+
+/* .content-1 .text-content h2 {
+  font-size: 17px;
+} */
+
+/* Content 2 */
+.container-1 .content-2 {
+  width: 25%;
+  background-image: url(img/landing-page/marufamin.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.container-1 .content-2 .image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/landing-page/marufamin1.png);
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+}
+
+.content-2:hover > .image-overlay {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1.03);
+  transition: 0, 5s;
+}
+
+.content-2:hover > .text-content {
+  position: absolute;
+  z-index: 3;
+  bottom: 50px;
+  transition: 0, 5s;
+}
+
+.content-2 .text-content {
+  text-align: center;
+  color: white;
+  transition: 0, 7s;
+  text-shadow: 2px 2px 2px rgba(32, 32, 32, 0.28);
+}
+
+.content-2:hover > .button .button-content {
+  opacity: 100%;
+  transition: 0.5s;
+  z-index: 3;
+  position: relative;
+  bottom: 10px;
+}
+
+.content-1 .text-content h2 {
+  font-size: 30px;
+}
+.content-2 .text-content p {
+  margin: 6px 5px;
+}
+
+/* Content 3 */
+.container-1 .content-3 {
+  width: 25%;
+  background-image: url(img/landing-page/nadiem-makariem.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.container-1 .content-3 .image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/landing-page/nadiem-makariem1.png);
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+}
+
+.content-3:hover > .image-overlay {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1.03);
+  transition: 0, 5s;
+}
+
+.content-3:hover > .text-content {
+  position: absolute;
+  z-index: 3;
+  bottom: 50px;
+  transition: 0, 5s;
+}
+
+.content-3 .text-content {
+  text-align: center;
+  color: white;
+  transition: 0, 7s;
+  text-shadow: 2px 2px 2px rgba(32, 32, 32, 0.28);
+}
+
+.content-3:hover > .button .button-content {
+  opacity: 100%;
+  transition: 0.5s;
+  z-index: 3;
+  position: relative;
+  bottom: 10px;
+}
+
+.content-1 .text-content h2 {
+  font-size: 30px;
+}
+.content-3 .text-content p {
+  margin: 6px 5px;
+}
+
+/* Content 4 */
+.container-1 .content-4 {
+  width: 25%;
+  background-image: url(img/landing-page/golose.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.container-1 .content-4 .image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/landing-page/golose-1.png);
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+}
+
+.content-4:hover > .image-overlay {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1.03);
+  transition: 0, 5s;
+}
+
+.content-4:hover > .text-content {
+  position: absolute;
+  z-index: 3;
+  bottom: 50px;
+  transition: 0, 5s;
+}
+
+.content-4 .text-content {
+  text-align: center;
+  color: white;
+  transition: 0, 7s;
+  text-shadow: 2px 2px 2px rgba(32, 32, 32, 0.28);
+}
+
+.content-4:hover > .button .button-content {
+  opacity: 100%;
+  transition: 0.5s;
+  z-index: 3;
+  position: relative;
+  bottom: 10px;
+}
+
+.content-1 .text-content h2 {
+  font-size: 30px;
+}
+
+.content-4 .text-content p {
+  margin: 6px 5px;
+}
+
+/* End of Hero Content */
+
+/* About */
+#content {
+  margin-top: 40px;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+  padding-bottom: 25px;
+  gap: 20px;
+  align-items: flex-start;
+  background-image: url(img/landing-page/presiden.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#content .container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0px -1px 16px 2px rgba(203, 203, 203, 0.53);
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.667);
+  backdrop-filter: blur(2px);
+}
+
+#content aside {
+  min-width: 270.812px;
+}
+
+.container-2 .judul-about {
+  margin-bottom: 18px;
+}
+
+.container-2 .judul-about h2 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.judul-about::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0px;
+  background-color: black;
+  margin: 6px auto 0px;
+  transition: width 0.3s;
+  border-radius: 3px;
+}
+
+.container-2:hover > .judul-about::after {
+  width: 170px;
+  background-color: black;
+}
+
+.container-2 .content-about img {
+  margin-right: 43px;
+}
+
+.topics {
+  display: flex;
+  margin: 17px 0;
+  gap: 8px;
+}
+
+.topic-card {
+  padding: 10px;
+  flex-basis: 25%;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 9px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.topic-card p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.topic-card.topic-active p::before {
+  content: "";
+  display: block;
+  width: 40px;
+  background-color: white;
+  margin-bottom: 5px;
+  height: 5px;
+  border-radius: 4px;
+}
+
+.topic-card p::before {
+  content: "";
+  display: block;
+  width: 0px;
+  background-color: white;
+  margin-bottom: 5px;
+  height: 5px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.topic-card:hover p::before {
+  width: 40px;
+}
+
+.topic-active {
+  border: 4px solid rgba(91, 91, 91, 0.464);
+  cursor: default;
+}
+
+.topic-card:nth-child(1) {
+  background-image: url(img/landing-page/jokowi.png);
+}
+.topic-card:nth-child(2) {
+  background-image: url(img/landing-page/marufamin.png);
+}
+.topic-card:nth-child(3) {
+  background-image: url(img/landing-page/nadiem-makariem.png);
+}
+.topic-card:nth-child(4) {
+  background-image: url(img/landing-page/golose.png);
+}
+
+/* Author */
+#author {
+  margin-top: 50px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 15px;
+  box-shadow: 0px -1px 16px 2px rgba(203, 203, 203, 0.53);
+  background-image: url(img/landing-page/presiden.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#author .container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.container-3 .judul-author {
+  margin-bottom: 28px;
+}
+
+.container-3 .judul-author h1 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.container-3:hover > .judul-author::after {
+  width: 160px;
+  background-color: black;
+}
+
+.judul-author::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0px;
+  background-color: black;
+  margin: 6px auto 0px;
+  transition: width 0.3s;
+  border-radius: 3px;
+}
+
+.author-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  width: 270px;
+  margin-right: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.87rem;
+  text-align: center;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.img-title a {
+  text-decoration: none;
+  color: white;
+}
+
+.img-title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.img-title a:hover {
+  color: rgb(233, 233, 233);
+  text-shadow: 0px 0px 4px #ffffff;
+  transition: 0.5s;
+}
+
+.img-desc {
+  margin-top: 4px;
+  font-size: 17px;
+}
+/* End of Author */
+
+/* Article Page */
+
+/* Header */
+
+.container-content::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container-content > * {
+  z-index: 5;
+}
+.container-content .judul-header h1 {
+  font-size: 50px;
+}
+.container-content .desc-header {
+  max-width: 400px;
+}
+/* Header */
+
+/* Article  */
+
+#article {
+  margin-top: 20px;
+}
+
+.container-article {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.container-article .sub-judul {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  line-height: 28px;
+  background-color: rgba(197, 197, 197, 0.486);
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-article .article content p {
+  font-size: 10px;
+}
+/* Article */
+
+/* End of Article Page */
+
+/* Footer */
+
+footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h2 {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 420px;
+  margin: 10px auto;
+  line-height: 22px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0 1.5rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: rgb(219, 219, 219);
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+}
+.footer-bottom span {
+  opacity: 0.4;
+  font-weight: 200;
+  text-decoration: none;
+}
+.footer-bottom span a {
+  text-decoration: none;
+  color: white;
+}
+
+/* End of Footer */
+
+.button-top {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 3rem;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.button-top.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button-top i {
+  color: #666666;
+  transition: 0.4s;
+}
+.button-top i:hover {
+  color: rgb(47, 47, 47);
+}
+
+/* Responsive Hero */
+@media (max-width: 915px) {
+  .container-1 {
+    flex-direction: column;
+    height: 700px;
+  }
+  .container-1 .content-1 {
+    width: 100%;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+  }
+  .container-1 .content-1 .image-overlay {
+    background-position: center -100px;
+  }
+  .content-1:hover > .button .button-content {
+    bottom: -63px;
+  }
+  .container-1 .content-2 {
+    width: 100%;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+  }
+  .container-1 .content-2 .image-overlay {
+    background-position: center -100px;
+  }
+  .content-2:hover > .button .button-content {
+    bottom: -63px;
+  }
+  .container-1 .content-3 {
+    width: 100%;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .content-3:hover > .button .button-content {
+    bottom: -63px;
+  }
+  .container-1 .content-4 {
+    width: 100%;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+  }
+  .container-1 .content-4 .image-overlay {
+    background-position: center -100px;
+  }
+  .content-4:hover > .button .button-content {
+    bottom: -63px;
+  }
+  /* About */
+  #content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #content aside {
+    width: 400px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 70%;
+  }
+  main#content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    height: 90px;
+  }
+  nav ul {
+    width: 80%;
+  }
+  .card {
+    width: 250px;
+  }
+  #author {
+    background-size: 600px;
+  }
+  .topics {
+    flex-direction: column;
+  }
+
+  .topic-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
